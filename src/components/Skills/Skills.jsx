@@ -1,7 +1,74 @@
 // src/components/Skills/Skills.jsx
 import React from "react";
-import { SkillsInfo } from "../../constants";
 import Tilt from "react-parallax-tilt";
+
+// Skills data directly from your CV
+const SkillsInfo = [
+  {
+    title: "Frontend",
+    skills: [
+      { name: "React.js", logo: "/logos/react.png" },
+      { name: "Next.js", logo: "/logos/nextjs.png" },
+      { name: "JavaScript (ES6+)", logo: "/logos/javascript.png" },
+      { name: "jQuery", logo: "/logos/jquery.png" },
+      { name: "Material-UI", logo: "/logos/materialui.png" },
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { name: "Node.js", logo: "/logos/node.png" },
+      { name: "Express.js", logo: "/logos/express.png" },
+      { name: "PHP", logo: "/logos/php.png" },
+      { name: "RESTful APIs", logo: "/logos/api.png" },
+    ],
+  },
+  {
+    title: "Mobile Development",
+    skills: [
+      { name: "React Native", logo: "/logos/reactnative.png" },
+      { name: "Android", logo: "/logos/android.png" },
+      { name: "iOS", logo: "/logos/ios.png" },
+    ],
+  },
+  {
+    title: "Database",
+    skills: [
+      { name: "MongoDB", logo: "/logos/mongodb.png" },
+      { name: "MySQL", logo: "/logos/mysql.png" },
+      { name: "SQL Server", logo: "/logos/sqlserver.png" },
+      { name: "IndexedDB", logo: "/logos/indexeddb.png" },
+    ],
+  },
+  {
+    title: "DevOps & Tools",
+    skills: [
+      { name: "AWS (EC2/S3)", logo: "/logos/aws.png" },
+      { name: "Docker", logo: "/logos/docker.png" },
+      { name: "Git", logo: "/logos/git.png" },
+      { name: "Postman", logo: "/logos/postman.png" },
+      { name: "CI/CD", logo: "/logos/cicd.png" },
+    ],
+  },
+  {
+    title: "Security & Auth",
+    skills: [
+      { name: "JWT", logo: "/logos/jwt.png" },
+      { name: "OAuth", logo: "/logos/oauth.png" },
+      { name: "Role-Based Access Control", logo: "/logos/rbac.png" },
+    ],
+  },
+  {
+    title: "Testing & QA",
+    skills: [
+      { name: "Jest", logo: "/logos/jest.png" },
+      { name: "Playwright", logo: "/logos/playwright.png" },
+      { name: "Selenium", logo: "/logos/selenium.png" },
+      { name: "Cypress", logo: "/logos/cypress.png" },
+      { name: "React Testing Library", logo: "/logos/reacttesting.png" },
+    ],
+  },
+];
 
 const Skills = () => (
   <section
@@ -13,7 +80,7 @@ const Skills = () => (
       <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
       <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
       <p className="text-gray-400 mt-4 text-lg font-semibold">
-      A collection of my technical skills and expertise honed through various projects and experiences
+        A collection of my technical skills and expertise honed through various projects and experiences
       </p>
     </div>
 
@@ -29,9 +96,8 @@ const Skills = () => (
             {category.title}
           </h3>
 
-          {/* Skill Items - 3 per row on larger screens */}
+          {/* Skill Items */}
           <Tilt
-            key={category.title}
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
