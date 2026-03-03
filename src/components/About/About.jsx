@@ -25,10 +25,10 @@ const About = () => {
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
-                'front-end Developer',
-                'App Developer',
-                'UI/UX Designer',
-                'Design-Focused Software Engineer',
+                'Full-Stack Developer',
+                'React Native Engineer',
+                'Cloud Architect',
+                'SaaS Solution Builder',
               ]}
               speed={100}
               eraseSpeed={50}
@@ -41,12 +41,12 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed text-justify">
-            I am a proactive and results-driven professional with a strong background in project management and a passion
-             for problem-solving. With excellent communication and leadership skills, I thrive in fast-paced environments 
-             where I can collaborate with diverse teams to achieve strategic goals. I have a track record of delivering 
-             high-quality projects on time and within budget, and I am constantly seeking opportunities to expand my knowledge
-              and expertise. I am committed to continuous improvement and strive to bring enthusiasm and innovation to
-               everything I do.
+            I am a Senior Full-Stack Developer with 10+ years of experience specializing in the MERN stack and React Native. 
+            I have architected scalable SaaS platforms, built enterprise-grade web and mobile applications, and optimized 
+            database-driven solutions for performance and reliability. My expertise spans API integration, cloud-native 
+            deployments on AWS, and workflow automation. I thrive in leading cross-functional teams, mentoring developers, 
+            and delivering production-grade applications with measurable impact. Passionate about innovation and continuous 
+            improvement, I bring both technical depth and strategic vision to every project.
           </p>
           {/* Resume Button */}
           <a
@@ -61,7 +61,6 @@ const About = () => {
           >
             DOWNLOAD CV
           </a>
-          
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
