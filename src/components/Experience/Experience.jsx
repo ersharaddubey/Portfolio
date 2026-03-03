@@ -1,5 +1,73 @@
+// src/components/Experience/Experience.jsx
 import React from "react";
-import { experiences } from "../../constants"; // Import your data
+
+const experiences = [
+  {
+    id: 1,
+    role: "Senior Web Developer",
+    company: "Aabhyasa Technologies Pvt. Ltd.",
+    date: "Nov 2021 – Nov 2025 | Varanasi, India",
+    img: "/logos/aabhyasa.png", // place logo in public/logos
+    desc: [
+      "Architected and led enterprise-scale web and mobile applications using React.js, Next.js, Node.js, and PHP.",
+      "Developed automation workflows in PHP that reduced document processing time by 50%.",
+      "Implemented secure OAuth integrations with Gmail, Microsoft, and Google Drive APIs.",
+      "Directed project timelines and guided cross-functional teams, achieving 100% compliance with security standards.",
+      "Deployed multi-tenant SaaS applications optimized for performance and cost efficiency on AWS.",
+      "Designed and enforced coding standards, CI/CD pipelines, and automated testing practices.",
+      "Mentored junior developers in MERN stack best practices."
+    ],
+    skills: ["React.js", "Next.js", "Node.js", "PHP", "AWS", "OAuth", "CI/CD", "Team Leadership"]
+  },
+  {
+    id: 2,
+    role: "Software Developer",
+    company: "Pride Solutions",
+    date: "Jun 2020 – Oct 2021 | Prayagraj, India",
+    img: "/logos/pride.png",
+    desc: [
+      "Delivered 15+ production applications across MERN and PHP stacks.",
+      "Optimized database schemas and queries, improving response times by 40%.",
+      "Developed RESTful APIs with JWT authentication and Laravel Passport.",
+      "Deployed PWA and native mobile apps with 10,000+ active users.",
+      "Implemented CI/CD pipelines using Azure DevOps, reducing deployment time by 30%.",
+      "Key Contribution: Developed and deployed critical COVID-19 Government Projects."
+    ],
+    skills: ["React.js", "Node.js", "PHP", "MongoDB", "JWT", "Azure DevOps", "PWA"]
+  },
+  {
+    id: 3,
+    role: "Software Developer",
+    company: "Edunext Technologies Pvt. Ltd.",
+    date: "Jun 2019 – Jun 2020 | Noida, India",
+    img: "/logos/edunext.png",
+    desc: [
+      "Developed scalable ERP portals and RESTful APIs using core PHP and MySQL.",
+      "Designed modules for admission, fee management, attendance, payroll, and reporting.",
+      "Built responsive dashboards with role-based access control.",
+      "Introduced automated testing with PHPUnit, reducing bugs by 35%.",
+      "Integrated real-time notifications using PHP and Socket.io.",
+      "Applied security best practices including SQL injection prevention and secure authentication."
+    ],
+    skills: ["PHP", "MySQL", "ERP Systems", "RESTful APIs", "Socket.io", "Automated Testing"]
+  },
+  {
+    id: 4,
+    role: "Software Developer",
+    company: "Vapsoft Technologies Pvt. Ltd.",
+    date: "Oct 2015 – May 2019 | Prayagraj, India",
+    img: "/logos/vapsoft.png",
+    desc: [
+      "Built and maintained dynamic web applications using PHP and MySQL.",
+      "Designed normalized database schemas and optimized queries.",
+      "Developed custom PHP modules for authentication and role-based access control.",
+      "Integrated third-party APIs (payment gateways, SMS/email services).",
+      "Enhanced legacy systems by refactoring code and reducing technical debt.",
+      "Applied security best practices to safeguard sensitive healthcare data."
+    ],
+    skills: ["PHP", "MySQL", "Authentication", "API Integration", "Security", "Legacy System Refactoring"]
+  }
+];
 
 const Experience = () => {
   return (
