@@ -7,68 +7,49 @@ const SkillsInfo = [
   {
     title: "Frontend",
     skills: [
-      { name: "React.js", logo: "/logos/react.png" },
-      { name: "Next.js", logo: "/logos/nextjs.png" },
-      { name: "JavaScript (ES6+)", logo: "/logos/javascript.png" },
-      { name: "jQuery", logo: "/logos/jquery.png" },
-      { name: "Material-UI", logo: "/logos/materialui.png" },
+      { name: "React.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "Next.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+      { name: "JavaScript (ES6+)", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "jQuery", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" },
+      { name: "Material-UI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", logo: "/logos/node.png" },
-      { name: "Express.js", logo: "/logos/express.png" },
-      { name: "PHP", logo: "/logos/php.png" },
-      { name: "RESTful APIs", logo: "/logos/api.png" },
-    ],
-  },
-  {
-    title: "Mobile Development",
-    skills: [
-      { name: "React Native", logo: "/logos/reactnative.png" },
-      { name: "Android", logo: "/logos/android.png" },
-      { name: "iOS", logo: "/logos/ios.png" },
+      { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { name: "Express.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
+      { name: "PHP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+      { name: "RESTful APIs", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/api/api-original.svg" }, // may need custom icon
     ],
   },
   {
     title: "Database",
     skills: [
-      { name: "MongoDB", logo: "/logos/mongodb.png" },
-      { name: "MySQL", logo: "/logos/mysql.png" },
-      { name: "SQL Server", logo: "/logos/sqlserver.png" },
-      { name: "IndexedDB", logo: "/logos/indexeddb.png" },
+      { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      { name: "SQL Server", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
     ],
   },
   {
     title: "DevOps & Tools",
     skills: [
-      { name: "AWS (EC2/S3)", logo: "/logos/aws.png" },
-      { name: "Docker", logo: "/logos/docker.png" },
-      { name: "Git", logo: "/logos/git.png" },
-      { name: "Postman", logo: "/logos/postman.png" },
-      { name: "CI/CD", logo: "/logos/cicd.png" },
-    ],
-  },
-  {
-    title: "Security & Auth",
-    skills: [
-      { name: "JWT", logo: "/logos/jwt.png" },
-      { name: "OAuth", logo: "/logos/oauth.png" },
-      { name: "Role-Based Access Control", logo: "/logos/rbac.png" },
+      { name: "AWS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+      { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+      { name: "Postman", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
     ],
   },
   {
     title: "Testing & QA",
     skills: [
-      { name: "Jest", logo: "/logos/jest.png" },
-      { name: "Playwright", logo: "/logos/playwright.png" },
-      { name: "Selenium", logo: "/logos/selenium.png" },
-      { name: "Cypress", logo: "/logos/cypress.png" },
-      { name: "React Testing Library", logo: "/logos/reacttesting.png" },
+      { name: "Jest", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" },
+      { name: "Cypress", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg" },
+      { name: "Selenium", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" },
     ],
   },
 ];
+
 
 const Skills = () => (
   <section
