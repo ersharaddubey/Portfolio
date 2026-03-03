@@ -7,7 +7,6 @@ const experiences = [
     role: "Senior Web Developer",
     company: "Aabhyasa Technologies Pvt. Ltd.",
     date: "Nov 2021 – Nov 2025 | Varanasi, India",
-    img: "/logos/aabhyasa.png", // place logo in public/logos
     desc: [
       "Architected and led enterprise-scale web and mobile applications using React.js, Next.js, Node.js, and PHP.",
       "Developed automation workflows in PHP that reduced document processing time by 50%.",
@@ -24,7 +23,6 @@ const experiences = [
     role: "Software Developer",
     company: "Pride Solutions",
     date: "Jun 2020 – Oct 2021 | Prayagraj, India",
-    img: "/logos/pride.png",
     desc: [
       "Delivered 15+ production applications across MERN and PHP stacks.",
       "Optimized database schemas and queries, improving response times by 40%.",
@@ -40,8 +38,7 @@ const experiences = [
     role: "Software Developer",
     company: "Edunext Technologies Pvt. Ltd.",
     date: "Jun 2019 – Jun 2020 | Noida, India",
-    img: "/logos/edunext.png",
-    desc: [
+     desc: [
       "Developed scalable ERP portals and RESTful APIs using core PHP and MySQL.",
       "Designed modules for admission, fee management, attendance, payroll, and reporting.",
       "Built responsive dashboards with role-based access control.",
@@ -56,7 +53,6 @@ const experiences = [
     role: "Software Developer",
     company: "Vapsoft Technologies Pvt. Ltd.",
     date: "Oct 2015 – May 2019 | Prayagraj, India",
-    img: "/logos/vapsoft.png",
     desc: [
       "Built and maintained dynamic web applications using PHP and MySQL.",
       "Designed normalized database schemas and optimized queries.",
@@ -106,15 +102,6 @@ const Experience = () => {
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
-                  <img
-                    src={experience.img}
-                    alt={experience.company}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
                 {/* Role, Company Name, and Date */}
                 <div className="flex flex-col justify-between">
                   <div>
